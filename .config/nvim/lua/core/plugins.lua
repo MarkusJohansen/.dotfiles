@@ -5,7 +5,10 @@ require('packer').startup(function(use)
     -- Theming
     use 'catppuccin/nvim'
     use 'nvim-lualine/lualine.nvim'
-
+    use "rebelot/kanagawa.nvim"
+    use "savq/melange-nvim"
+    
+    
     -- Treesitter for better syntax
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -16,8 +19,5 @@ require('packer').startup(function(use)
 
     -- File explorer
     use 'nvim-tree/nvim-tree.lua'
-
-    -- Icons (make sure your terminal font supports it)
-    use 'nvim-tree/nvim-web-devicons'
 end)
 

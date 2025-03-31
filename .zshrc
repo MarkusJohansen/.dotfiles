@@ -101,3 +101,12 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias config='/usr/bin/git --git-dir=/root/.dotfiles/ --work-tree=/root'
+
+alias nginx-http="cd && cd .. && cd /etc/nginx/conf.d/"
+
+# SETUP BUN RUNTIME
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# ENVIRONMENT VARIABLES FROM ROOT .env FILE
+source ~/.env

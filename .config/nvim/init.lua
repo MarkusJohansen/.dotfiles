@@ -8,6 +8,8 @@ require("plugins.lualine")
 require("plugins.filetree")
 require("plugins.treesitter")
 
+-- Load custom functions
+require("core.switcher") -- Theme switcher
 
 -- Auto-open nvim-tree on startup if no file is passed
 vim.api.nvim_create_autocmd("VimEnter", {
